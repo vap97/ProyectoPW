@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+     background-color:#e8af4f;
+
+}
+header h1{
+  font-size: 34px;
+  letter-spacing:8px ;
+
+}
+nav{
+    background-color:#540308;
+    background-image:url(../images/TRC2.jpg);
+    color: white;
+    width: 100%;
+    height:200px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+  top:160px;
+  border-right: solid 2px;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 12px; 25px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  background-color: #e8af4f;
+  transition: all 0.5s;
+}
+main{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  align-items:center;
+}
+main h1{
+  color:#540308 ;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+}
+main p{
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+main ul{
+  color: white;
+  text-align: left;
+  margin: 10px;
+  font-size: 25px;
+}
+main image{
+  width: auto;
+}
+
+footer{
+  background-color:#540308 ;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+}
+.drawer{
+  color: white;
+  float: left;
+  cursor: pointer;
+  display: none;
+  margin-left: 16px;
+  padding: 3px;
+  border: solid 1px;
+  border-radius: 1px;
+}
+#ckbox{
+  display: none;
+}
+@media (max-width: 1020px){
+  nav{
+    justify-content: flex-start;
+  }
+  .drawer{
+    display: block;
+  }
+  #ckbox:checked ~ .menu-box{
+    left: 0;
+  }
+  nav h1{
+    margin-left: 16px;
+  }
+  ul{
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+    background-color:#540308;
+    top:20vh;
+    text-align: left;
+    transition: all 1s;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    left: -100%;
+  }
+  nav ul li{
+    padding: 16px 0;
+    padding-left: 3px;
+    border-bottom:  solid 1px rgba(201, 196, 196,0.4);
+    display: flex;
+    flex-direction: column;
+  }
+.image{
+display: flex;
+}
+}
